@@ -1,4 +1,6 @@
-const osc = require('osc');
+//import {UDPPort} from 'osc';
+
+const osc = require(`osc`);
 
 const udpPort = new osc.UDPPort({
   localAddress: `localhost`,
