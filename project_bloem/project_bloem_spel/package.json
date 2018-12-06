@@ -1,13 +1,12 @@
 {
-  "name": "Bas_the_bear_story",
+  "name": "Project_bloem",
   "version": "1.0.0",
-  "description": "Story about Bas falling from the tree wanted to go back to his mom. Not possible without help of a little hero.",
-  "main": "index.js",
-  "author": "Yanick Vercruysse & Frouke Buyse",
+  "description": "",
+  "main": "script.js",
+  "author": "Nadia Marutyan & Frouke Buyse",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=production node server.js",
-    "development": "NODE_ENV=development node server.js webpack-dev-server --hot --open",
+    "development": "NODE_ENV=development webpack-dev-server --hot --open",
     "production": "rm -rf dist/ && npm run copydist && NODE_ENV=production webpack -p",
     "copydist": "ditto ./src/assets/ ./dist/assets/"
   },
@@ -47,9 +46,5 @@
     "webpack-dev-server": "^2.9.3",
     "webpack-merge": "^4.1.0",
     "webpack-plugin-critical": "^1.0.0"
-  },
-  "dependencies": {
-    "express": "^4.16.4",
-    "socket.io": "^2.2.0"
   }
 }
