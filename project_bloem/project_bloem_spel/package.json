@@ -49,6 +49,7 @@
     "webpack-plugin-critical": "^1.0.0"
   },
   "dependencies": {
-    "johnny-five": "^1.0.0"
+    "johnny-five": "^1.0.0",
+    "ws": "^6.1.2"
   }
 }

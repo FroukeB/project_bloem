@@ -84,7 +84,16 @@ const commonConfig = merge([
       new HtmlWebpackPlugin({
         template: "./public/index.html"
       })
-    ]
+    ],
+    node: {
+      fs: 'empty',
+      ws: 'empty',
+      tls: 'empty',
+      dgram: 'empty',
+      bufferutil: 'empty',
+      net: 'empty',
+      child_process: 'empty'
+    }
   }
 ]);
 
