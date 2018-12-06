@@ -3,13 +3,14 @@ const gif1ButtonShow = document.querySelector(`#gif1ButtonShow`);
 const gif1 = document.querySelector(`gif1`);
 
 const clickOn = e => {
-  document.getElementById("gif1").classList.add("hide");
+  console.log(e);
+  gif1.classList.add(`hide`);
 
 };
 
 const clickToShow = e => {
-  document.getElementById("gif1").classList.remove("hide");
-
+  gif1.classList.remove(`hide`);
+  console.log(e);
 };
 
 

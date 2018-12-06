@@ -8,7 +8,7 @@
   "scripts": {
     "development": "NODE_ENV=development webpack-dev-server --hot --open",
     "production": "rm -rf dist/ && npm run copydist && NODE_ENV=production webpack -p",
-    "copydist": "ditto ./src/assets/ ./dist/assets/"
+    "copydist": "ditto ./public/assets/ ./dist/assets/"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
