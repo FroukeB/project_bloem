@@ -18,7 +18,7 @@ const PATHS = {
 
 const commonConfig = merge([
   {
-    entry: [path.join(PATHS.src, "css/style.css"), path.join(PATHS.src, "js/script.js")],
+    entry: [path.join(PATHS.src, "css/screen.css"), path.join(PATHS.src, "js/script.js")],
     output: {
       path: PATHS.dist,
       filename: `js/script.[hash].js`
@@ -42,7 +42,7 @@ const commonConfig = merge([
               loader: `file-loader`,
               options: {
                 limit: 1000,
-                context: `./src`,
+                context: `./public`,
                 name: `[path][name].[ext]`
               }
             },{
